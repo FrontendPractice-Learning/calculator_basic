@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <form onsubmit="handlerSubmit(event)" class="container">
+        <div class="input-values">
+            <label>Value 1:
+                <input id="value-1" name="value1" type="number">
+            </label>
+
+            <label for="value-2">Value 2: 
+                <input id="value-2" type="number">
+            </label>
+        </div>
+        <div class="options">
+            <h3>Options</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="chosen-option" id="sum">
+                    <label for="sum">SUM</label>
+                </li>
+                <li>
+                    <input type="radio" name="chosen-option" id="subtraction">
+                    <label for="subtraction">SUBTRACTION</label>
+                </li>
+                <li>
+                    <input type="radio" name="chosen-option" id="multiplication">
+                    <label for="multiplication">MULTIPLICATION</label>
+                </li>
+                <li>
+                    <input type="radio" name="chosen-option" id="division">
+                    <label for="division">DIVISION</label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Result</h3>
+            <input id="input-calculate" type="number" readonly>
+            <input id="button" type="submit" value="Calculate" >
+            <button id="button-clear">Clear</button>
+        </div>
+    </form>
+
+    <script src="./main.js"></script>
+</body>
+</html>
